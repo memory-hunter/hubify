@@ -400,10 +400,10 @@ if args.mode is not None:
   if args.mode == 'light' or args.mode == 'l':
     css = light
   elif args.mode == 'dark' or args.mode == 'd':
-    css = open('./res/dark.css', 'r').read()
+    css = dark
   else:
     print('Invalid color mode, using light mode...')
-    css = dark
+    css = light
 else:
   css = light
 
